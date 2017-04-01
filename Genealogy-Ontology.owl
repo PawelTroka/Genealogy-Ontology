@@ -1,0 +1,2257 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY untitled-ontology-2 "http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <Ontology rdf:about="http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestBabciaDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestBabciaDla">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Kobieta"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestBratanicaDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestBratanicaDla">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Kobieta"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+        <inverseOf rdf:resource="&untitled-ontology-2;maBratanice"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestBratankiemDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestBratankiemDla">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestBratemDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestBratemDla">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-2;jestRodzenstwemDla"/>
+        <propertyDisjointWith rdf:resource="&untitled-ontology-2;jestSiostraDla"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestCiotkaDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestCiotkaDla">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Kobieta"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestCorkaDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestCorkaDla">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Kobieta"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+        <propertyDisjointWith rdf:resource="&untitled-ontology-2;jestSynemDla"/>
+        <inverseOf rdf:resource="&untitled-ontology-2;maCorke"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestDziadkiemDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestDziadkiemDla">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+        <inverseOf rdf:resource="&untitled-ontology-2;maDziadka"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestDzieckiemDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestDzieckiemDla">
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <equivalentProperty rdf:resource="&untitled-ontology-2;maRodzica"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestKuzynemDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestKuzynemDla">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+        <propertyDisjointWith rdf:resource="&untitled-ontology-2;jestKuzynkaDla"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestKuzynkaDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestKuzynkaDla">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Kobieta"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestMatkaDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestMatkaDla">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Kobieta"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+        <inverseOf rdf:resource="&untitled-ontology-2;maMatke"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestOjcemDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestOjcemDla">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestPrababciaDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestPrababciaDla">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Kobieta"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestPradziadkiemDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestPradziadkiemDla">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+        <inverseOf rdf:resource="&untitled-ontology-2;maPradziadka"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestRodzenstwemDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestRodzenstwemDla">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+        <equivalentProperty rdf:resource="&untitled-ontology-2;maRodzenstwo"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestSiostraDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestSiostraDla">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Kobieta"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-2;jestRodzenstwemDla"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestSiostrzencemDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestSiostrzencemDla">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+        <inverseOf rdf:resource="&untitled-ontology-2;maSiostrzenca"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestSiostrzenicaDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestSiostrzenicaDla">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Kobieta"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestSynemDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestSynemDla">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+        <inverseOf rdf:resource="&untitled-ontology-2;maSyna"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestWujemDla -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;jestWujemDla">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maBabcie -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maBabcie">
+        <rdfs:range rdf:resource="&untitled-ontology-2;Kobieta"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <inverseOf rdf:resource="&untitled-ontology-2;jestBabciaDla"/>
+        <propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-2;maRodzica"/>
+            <rdf:Description rdf:about="&untitled-ontology-2;maMatke"/>
+        </propertyChainAxiom>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maBrata -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maBrata">
+        <rdfs:range rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <inverseOf rdf:resource="&untitled-ontology-2;jestBratemDla"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-2;maRodzenstwo"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maBratanice -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maBratanice">
+        <rdfs:range rdf:resource="&untitled-ontology-2;Kobieta"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maBratanka -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maBratanka">
+        <rdfs:range rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <inverseOf rdf:resource="&untitled-ontology-2;jestBratankiemDla"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maCiotke -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maCiotke">
+        <rdfs:range rdf:resource="&untitled-ontology-2;Kobieta"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <inverseOf rdf:resource="&untitled-ontology-2;jestCiotkaDla"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maCorke -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maCorke">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Corka"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Kobieta"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-2;maDziecko"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maDziadka -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maDziadka">
+        <rdfs:range rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-2;maRodzica"/>
+            <rdf:Description rdf:about="&untitled-ontology-2;maOjca"/>
+        </propertyChainAxiom>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maDziecko -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maDziecko">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <inverseOf rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+        <rdfs:range>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Corka"/>
+                    <rdf:Description rdf:about="&untitled-ontology-2;Syn"/>
+                </unionOf>
+            </Class>
+        </rdfs:range>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maMatke -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maMatke">
+        <rdfs:range rdf:resource="&untitled-ontology-2;Kobieta"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-2;maRodzica"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maOjca -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maOjca">
+        <rdfs:range rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <inverseOf rdf:resource="&untitled-ontology-2;jestOjcemDla"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-2;maRodzica"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maPrababcie -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maPrababcie">
+        <rdfs:range rdf:resource="&untitled-ontology-2;Kobieta"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <inverseOf rdf:resource="&untitled-ontology-2;jestPrababciaDla"/>
+        <propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-2;maRodzica"/>
+            <rdf:Description rdf:about="&untitled-ontology-2;maRodzica"/>
+            <rdf:Description rdf:about="&untitled-ontology-2;maMatke"/>
+        </propertyChainAxiom>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maPradziadka -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maPradziadka">
+        <rdfs:range rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-2;maRodzica"/>
+            <rdf:Description rdf:about="&untitled-ontology-2;maRodzica"/>
+            <rdf:Description rdf:about="&untitled-ontology-2;maOjca"/>
+        </propertyChainAxiom>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maRodzenstwo -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maRodzenstwo">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maRodzica -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maRodzica">
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Dziecko"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Rodzic"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maSiostre -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maSiostre">
+        <rdfs:range rdf:resource="&untitled-ontology-2;Kobieta"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <inverseOf rdf:resource="&untitled-ontology-2;jestSiostraDla"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-2;maRodzenstwo"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maSiostrzenca -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maSiostrzenca">
+        <rdfs:range rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maSiostrzenice -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maSiostrzenice">
+        <rdfs:range rdf:resource="&untitled-ontology-2;Kobieta"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <inverseOf rdf:resource="&untitled-ontology-2;jestSiostrzenicaDla"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maSyna -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maSyna">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Syn"/>
+        <rdfs:subPropertyOf rdf:resource="&untitled-ontology-2;maDziecko"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maWspolneDzieckoZ -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maWspolneDzieckoZ">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:range rdf:resource="&untitled-ontology-2;Osoba"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-2;jestOjcemDla"/>
+            <rdf:Description rdf:about="&untitled-ontology-2;maMatke"/>
+        </propertyChainAxiom>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#maWuja -->
+
+    <ObjectProperty rdf:about="&untitled-ontology-2;maWuja">
+        <rdfs:range rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <rdfs:domain rdf:resource="&untitled-ontology-2;Osoba"/>
+        <inverseOf rdf:resource="&untitled-ontology-2;jestWujemDla"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#jestPlci -->
+
+    <DatatypeProperty rdf:about="&untitled-ontology-2;jestPlci">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Babcia -->
+
+    <Class rdf:about="&untitled-ontology-2;Babcia">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Kobieta"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                        <someValuesFrom>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                            </Restriction>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Kobieta"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Brat -->
+
+    <Class rdf:about="&untitled-ontology-2;Brat">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Mezczyzna"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+                        <someValuesFrom>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                <onClass rdf:resource="&untitled-ontology-2;Osoba"/>
+                                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</minQualifiedCardinality>
+                            </Restriction>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <disjointWith rdf:resource="&untitled-ontology-2;Corka"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Bratanek -->
+
+    <Class rdf:about="&untitled-ontology-2;Bratanek">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-2;jestBratankiemDla"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Mezczyzna"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-2;maOjca"/>
+                        <someValuesFrom>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+                                <someValuesFrom>
+                                    <Restriction>
+                                        <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                        <onClass rdf:resource="&untitled-ontology-2;Osoba"/>
+                                        <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</minQualifiedCardinality>
+                                    </Restriction>
+                                </someValuesFrom>
+                            </Restriction>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Bratanica -->
+
+    <Class rdf:about="&untitled-ontology-2;Bratanica">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-2;jestBratanicaDla"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Kobieta"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-2;maOjca"/>
+                        <someValuesFrom>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+                                <someValuesFrom>
+                                    <Restriction>
+                                        <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                        <onClass rdf:resource="&untitled-ontology-2;Osoba"/>
+                                        <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</minQualifiedCardinality>
+                                    </Restriction>
+                                </someValuesFrom>
+                            </Restriction>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Kobieta"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Ciotka -->
+
+    <Class rdf:about="&untitled-ontology-2;Ciotka">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Kobieta"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                                <someValuesFrom>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                                        <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                                                    </Restriction>
+                                                </someValuesFrom>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                                <onClass rdf:resource="&untitled-ontology-2;Osoba"/>
+                                                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</minQualifiedCardinality>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;maWspolneDzieckoZ"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&untitled-ontology-2;Mezczyzna"/>
+                                            <Restriction>
+                                                <onProperty rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+                                                <someValuesFrom>
+                                                    <Class>
+                                                        <intersectionOf rdf:parseType="Collection">
+                                                            <Restriction>
+                                                                <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                                                <someValuesFrom>
+                                                                    <Restriction>
+                                                                        <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                                                        <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                                                                    </Restriction>
+                                                                </someValuesFrom>
+                                                            </Restriction>
+                                                            <Restriction>
+                                                                <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                                                <onClass rdf:resource="&untitled-ontology-2;Osoba"/>
+                                                                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</minQualifiedCardinality>
+                                                            </Restriction>
+                                                        </intersectionOf>
+                                                    </Class>
+                                                </someValuesFrom>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-2;jestCiotkaDla"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Kobieta"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Corka -->
+
+    <Class rdf:about="&untitled-ontology-2;Corka">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-2;jestCorkaDla"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Kobieta"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Kobieta"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Dziadek -->
+
+    <Class rdf:about="&untitled-ontology-2;Dziadek">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Mezczyzna"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                        <someValuesFrom>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                            </Restriction>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Dziecko -->
+
+    <Class rdf:about="&untitled-ontology-2;Dziecko">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Osoba"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Kobieta -->
+
+    <Class rdf:about="&untitled-ontology-2;Kobieta">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Osoba"/>
+        <disjointWith rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Kuzyn -->
+
+    <Class rdf:about="&untitled-ontology-2;Kuzyn">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-2;jestKuzynemDla"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Mezczyzna"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+                        <someValuesFrom>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+                                <someValuesFrom>
+                                    <Restriction>
+                                        <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                        <onClass>
+                                            <Restriction>
+                                                <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                                            </Restriction>
+                                        </onClass>
+                                        <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</minQualifiedCardinality>
+                                    </Restriction>
+                                </someValuesFrom>
+                            </Restriction>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Kuzynka -->
+
+    <Class rdf:about="&untitled-ontology-2;Kuzynka">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Kobieta"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+                        <someValuesFrom>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+                                <someValuesFrom>
+                                    <Restriction>
+                                        <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                        <onClass>
+                                            <Restriction>
+                                                <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                                            </Restriction>
+                                        </onClass>
+                                        <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</minQualifiedCardinality>
+                                    </Restriction>
+                                </someValuesFrom>
+                            </Restriction>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-2;jestKuzynkaDla"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Kobieta"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Matka -->
+
+    <Class rdf:about="&untitled-ontology-2;Matka">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-2;jestMatkaDla"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Kobieta"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Kobieta"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Mezczyzna -->
+
+    <Class rdf:about="&untitled-ontology-2;Mezczyzna">
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Osoba"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Ojciec -->
+
+    <Class rdf:about="&untitled-ontology-2;Ojciec">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-2;jestOjcemDla"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Mezczyzna"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Osoba -->
+
+    <Class rdf:about="&untitled-ontology-2;Osoba"/>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Prababcia -->
+
+    <Class rdf:about="&untitled-ontology-2;Prababcia">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Kobieta"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                        <someValuesFrom>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                <someValuesFrom>
+                                    <Restriction>
+                                        <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                        <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                                    </Restriction>
+                                </someValuesFrom>
+                            </Restriction>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Kobieta"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Pradziadek -->
+
+    <Class rdf:about="&untitled-ontology-2;Pradziadek">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Mezczyzna"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                        <someValuesFrom>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                <someValuesFrom>
+                                    <Restriction>
+                                        <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                        <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                                    </Restriction>
+                                </someValuesFrom>
+                            </Restriction>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Prawnuczka -->
+
+    <Class rdf:about="&untitled-ontology-2;Prawnuczka">
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&untitled-ontology-2;Kobieta"/>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;maPrababcie"/>
+                                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&untitled-ontology-2;Kobieta"/>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;maPradziadka"/>
+                                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Kobieta"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Prawnuk -->
+
+    <Class rdf:about="&untitled-ontology-2;Prawnuk">
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&untitled-ontology-2;Mezczyzna"/>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;maPrababcie"/>
+                                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&untitled-ontology-2;Mezczyzna"/>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;maPradziadka"/>
+                                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Rodzic -->
+
+    <Class rdf:about="&untitled-ontology-2;Rodzic">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Osoba"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Siostra -->
+
+    <Class rdf:about="&untitled-ontology-2;Siostra">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Kobieta"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+                        <someValuesFrom>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                <onClass rdf:resource="&untitled-ontology-2;Osoba"/>
+                                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</minQualifiedCardinality>
+                            </Restriction>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Kobieta"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Siostrzenica -->
+
+    <Class rdf:about="&untitled-ontology-2;Siostrzenica">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-2;jestSiostrzenicaDla"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Kobieta"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-2;maMatke"/>
+                        <someValuesFrom>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+                                <someValuesFrom>
+                                    <Restriction>
+                                        <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                        <onClass rdf:resource="&untitled-ontology-2;Osoba"/>
+                                        <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</minQualifiedCardinality>
+                                    </Restriction>
+                                </someValuesFrom>
+                            </Restriction>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Kobieta"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Siostrzeniec -->
+
+    <Class rdf:about="&untitled-ontology-2;Siostrzeniec">
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Mezczyzna"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-2;maMatke"/>
+                        <someValuesFrom>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+                                <someValuesFrom>
+                                    <Restriction>
+                                        <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                        <onClass rdf:resource="&untitled-ontology-2;Osoba"/>
+                                        <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</minQualifiedCardinality>
+                                    </Restriction>
+                                </someValuesFrom>
+                            </Restriction>
+                        </someValuesFrom>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-2;jestSiostrzencemDla"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+            </Restriction>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Syn -->
+
+    <Class rdf:about="&untitled-ontology-2;Syn">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-2;jestSynemDla"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Mezczyzna"/>
+                    <Restriction>
+                        <onProperty rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+                        <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                    </Restriction>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Wnuczka -->
+
+    <Class rdf:about="&untitled-ontology-2;Wnuczka">
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&untitled-ontology-2;Kobieta"/>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;maBabcie"/>
+                                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&untitled-ontology-2;Kobieta"/>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;maDziadka"/>
+                                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Kobieta"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Wnuk -->
+
+    <Class rdf:about="&untitled-ontology-2;Wnuk">
+        <equivalentClass>
+            <Class>
+                <unionOf rdf:parseType="Collection">
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&untitled-ontology-2;Mezczyzna"/>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;maBabcie"/>
+                                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                    <Class>
+                        <intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&untitled-ontology-2;Mezczyzna"/>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;maDziadka"/>
+                                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                            </Restriction>
+                        </intersectionOf>
+                    </Class>
+                </unionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#Wuj -->
+
+    <Class rdf:about="&untitled-ontology-2;Wuj">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="&untitled-ontology-2;jestWujemDla"/>
+                <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Class>
+                <intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&untitled-ontology-2;Mezczyzna"/>
+                    <Class>
+                        <unionOf rdf:parseType="Collection">
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <Restriction>
+                                                <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                                <someValuesFrom>
+                                                    <Restriction>
+                                                        <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                                        <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                                                    </Restriction>
+                                                </someValuesFrom>
+                                            </Restriction>
+                                            <Restriction>
+                                                <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                                <onClass rdf:resource="&untitled-ontology-2;Osoba"/>
+                                                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</minQualifiedCardinality>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                            <Restriction>
+                                <onProperty rdf:resource="&untitled-ontology-2;maWspolneDzieckoZ"/>
+                                <someValuesFrom>
+                                    <Class>
+                                        <intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&untitled-ontology-2;Kobieta"/>
+                                            <Restriction>
+                                                <onProperty rdf:resource="&untitled-ontology-2;jestDzieckiemDla"/>
+                                                <someValuesFrom>
+                                                    <Class>
+                                                        <intersectionOf rdf:parseType="Collection">
+                                                            <Restriction>
+                                                                <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                                                <someValuesFrom>
+                                                                    <Restriction>
+                                                                        <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                                                        <someValuesFrom rdf:resource="&untitled-ontology-2;Osoba"/>
+                                                                    </Restriction>
+                                                                </someValuesFrom>
+                                                            </Restriction>
+                                                            <Restriction>
+                                                                <onProperty rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                                                <onClass rdf:resource="&untitled-ontology-2;Osoba"/>
+                                                                <minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</minQualifiedCardinality>
+                                                            </Restriction>
+                                                        </intersectionOf>
+                                                    </Class>
+                                                </someValuesFrom>
+                                            </Restriction>
+                                        </intersectionOf>
+                                    </Class>
+                                </someValuesFrom>
+                            </Restriction>
+                        </unionOf>
+                    </Class>
+                </intersectionOf>
+            </Class>
+        </equivalentClass>
+        <rdfs:subClassOf rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#AdamOsman -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;AdamOsman">
+        <untitled-ontology-2:maMatke rdf:resource="&untitled-ontology-2;EugeniaOsman"/>
+        <untitled-ontology-2:maOjca rdf:resource="&untitled-ontology-2;StanislawOsman"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#AnnaOsman -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;AnnaOsman"/>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#EugeniaOsman -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;EugeniaOsman">
+        <untitled-ontology-2:maOjca rdf:resource="&untitled-ontology-2;JanRompa"/>
+        <untitled-ontology-2:maMatke rdf:resource="&untitled-ontology-2;MartaRompa"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#JanOsman -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;JanOsman">
+        <rdf:type rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <untitled-ontology-2:maOjca rdf:resource="&untitled-ontology-2;AdamOsman"/>
+        <untitled-ontology-2:maMatke rdf:resource="&untitled-ontology-2;AnnaOsman"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#JanRompa -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;JanRompa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#LeonTroka -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;LeonTroka"/>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#LidiaTroka -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;LidiaTroka">
+        <untitled-ontology-2:maMatke rdf:resource="&untitled-ontology-2;EugeniaOsman"/>
+        <untitled-ontology-2:maOjca rdf:resource="&untitled-ontology-2;StanislawOsman"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#MartaRompa -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;MartaRompa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#PawelTroka -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;PawelTroka">
+        <rdf:type rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <untitled-ontology-2:maMatke rdf:resource="&untitled-ontology-2;LidiaTroka"/>
+        <untitled-ontology-2:maOjca rdf:resource="&untitled-ontology-2;WieslawTroka"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#PiotrOsman -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;PiotrOsman">
+        <rdf:type rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+        <untitled-ontology-2:maOjca rdf:resource="&untitled-ontology-2;AdamOsman"/>
+        <untitled-ontology-2:maMatke rdf:resource="&untitled-ontology-2;AnnaOsman"/>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#StanislawOsman -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;StanislawOsman"/>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#TeresaTroka -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;TeresaTroka"/>
+    
+
+
+    <!-- http://www.semanticweb.org/start/ontologies/2014/4/untitled-ontology-2#WieslawTroka -->
+
+    <NamedIndividual rdf:about="&untitled-ontology-2;WieslawTroka">
+        <untitled-ontology-2:maOjca rdf:resource="&untitled-ontology-2;LeonTroka"/>
+        <untitled-ontology-2:maMatke rdf:resource="&untitled-ontology-2;TeresaTroka"/>
+    </NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="&untitled-ontology-2;JanOsman"/>
+            <rdf:Description rdf:about="&untitled-ontology-2;PiotrOsman"/>
+        </distinctMembers>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl#siostra">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#corka">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#on">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#rodzic">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#bratsiostra">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#syn">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#ja">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#ktos">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#rodz">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#bls">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#brat">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#siostralubbrat">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#dziecko">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#ojciec">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl#inneDziecko">
+        <rdf:type rdf:resource="&swrl;Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#ktos"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maRodzenstwo"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#bls"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#rodz"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maRodzica"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#ja"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#rodz"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maWspolneDzieckoZ"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#bls"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#ktos"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maWuja"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#ja"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#ktos"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maDziecko"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#dziecko"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#ojciec"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#inneDziecko"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#ojciec"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;DifferentIndividualsAtom"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#dziecko"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#inneDziecko"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;jestRodzenstwemDla"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#dziecko"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#inneDziecko"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maCorke"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#corka"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#siostra"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maSiostre"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#on"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#siostra"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maSiostrzenice"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#corka"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#on"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maSiostrzenca"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#on"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#syn"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maSyna"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#siostra"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#syn"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maSiostre"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#on"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#siostra"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-2;Kobieta"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#dziecko"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#dziecko"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#ojciec"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maCorke"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#dziecko"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#ojciec"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;jestRodzenstwemDla"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#siostra"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#siostralubbrat"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-2;Kobieta"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#siostra"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maSiostre"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#siostra"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#siostralubbrat"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;jestRodzenstwemDla"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#brat"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#siostralubbrat"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#brat"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maBrata"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#brat"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#siostralubbrat"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maBratanice"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#corka"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#on"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maCorke"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#brat"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#corka"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maBrata"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#brat"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#on"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maBrata"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#brat"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#on"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maSyna"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#brat"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#syn"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maBratanka"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#on"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#syn"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maCiotke"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#brat"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#ja"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maRodzica"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#ja"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#rodzic"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maSiostre"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#brat"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#rodzic"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maDziecko"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#dziecko"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#ojciec"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-2;Mezczyzna"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#dziecko"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maSyna"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#dziecko"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#ojciec"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;jestRodzenstwemDla"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#bratsiostra"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#rodzic"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maRodzica"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#ja"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#rodzic"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maCorke"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#bratsiostra"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#syn"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;jestKuzynkaDla"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#ja"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#syn"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maSyna"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#bratsiostra"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#syn"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maRodzica"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#ja"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#rodzic"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;jestRodzenstwemDla"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#bratsiostra"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#rodzic"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;jestKuzynemDla"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#ja"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#syn"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maRodzica"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#ja"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#rodzic"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maBrata"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#brat"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#rodzic"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maWuja"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#brat"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#ja"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maCiotke"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#ja"/>
+                        <swrl:argument2 rdf:resource="urn:swrl#ktos"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="&untitled-ontology-2;Kobieta"/>
+                        <swrl:argument1 rdf:resource="urn:swrl#ktos"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;AtomList"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;AtomList"/>
+                                        <rdf:rest rdf:resource="&rdf;nil"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maWspolneDzieckoZ"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl#bls"/>
+                                                <swrl:argument2 rdf:resource="urn:swrl#ktos"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                    </rdf:Description>
+                                </rdf:rest>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maRodzica"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl#ja"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl#rodz"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                            </rdf:Description>
+                        </rdf:rest>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&untitled-ontology-2;maRodzenstwo"/>
+                                <swrl:argument2 rdf:resource="urn:swrl#bls"/>
+                                <swrl:argument1 rdf:resource="urn:swrl#rodz"/>
+                            </rdf:Description>
+                        </rdf:first>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
